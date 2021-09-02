@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles.css";
+import React from "react";
+import classNames from "classnames";
+import { Tooltip } from "@material-ui/core";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Menu from "./menu";
+import { BaseMenu, ALwaysOpenedMenu } from "./menus";
+
+// button tooltip
+// button position
+// custom position
+// sections
+// close on click
+// setMenuVisibility on single item
+
+export default function App() {
+  const items = [
+    { text: "first item" },
+    { text: "second item" },
+    { text: "third item" },
+  ];
+
+  return <div className="App"></div>;
 }
-
-export default App;
